@@ -16,7 +16,7 @@ from sklearn.metrics import mean_squared_error
 
 from ..data_analysis import HousePriceData
 
-scenarios('test_sanity.feature')
+scenarios('features/sanity_test.feature')
 
 
 def get_reference_model(model_type):
