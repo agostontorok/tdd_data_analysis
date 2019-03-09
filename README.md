@@ -14,6 +14,9 @@ Take for example the first step: fail. I remember when some time ago, we were si
 
 The next important thing is to focus on __only__ passing the actual test and not writing code that is intended to pass all possible tests in the future. One mantra helping in this is to 'Keep it simple, stupid' (KISS) that is often written on the wall of an IT office. Serious TDD practitioners literally stop as soon as the test passed and switch writing the next test if no refactoring needed. This yields short cycles of fail-pass iterations (aka. the flow). Also, the refactoring should not mean changing the test logic or completely rewriting the function that passed it. If you feel for example that the function is duplicated or has too many parameters then refactor. 
 
+![Figure 1]()
+
+
 ## TDD for analytics
 
 Now, one can say: alright this is nice and true for writing software for production but how does it relate to my practice when I do exploratory data science. First, I'm sure you met the situation when something that you calculated in your notebook in - let's say - Jupyter is not working in the next stage of the development. Maybe the fields were not matching, maybe the datatypes, or maybe a seed was not fixed. Second, it should sound familiar when the data just drags you down into the rabbit hole: you notice that a linear model does not explain enough variance so you try some non-linear ones, then you see also that some missing values can be predicted so you predict those, then you see that maybe the data should be transformed, some string columns should be vectorized, others should be levels of an ordinal scale etc. Then, 2 weeks into the exploration the manager asks where is the result that you promised for one week ago and you can only explain to him what will be your next steps... And you still did not reduce the uncertainty for her. And she still does not know if the feature/model is needed at all or we should concentrate on other promising directions. 
@@ -21,6 +24,8 @@ Now, one can say: alright this is nice and true for writing software for product
 And third, there is a [craftmanship](http://science.sciencemag.org/content/280/5366/1014.full?view=full) in data science as well. Although we read about the nice new discoveries in machine learning, the researchers that made those discoveries had to follow a rigorous stream of steps before they even had a chance to try out something new. They had to follow the principled way of data access, cleaning, transforming, modeling, and validation, which we all follow. Nevertheless, this is very complex process with lots of things to pay attention to. TDD helps keeping these steps modular. It facilitates replication, extension, and falsification. There are even [libraries](https://github.com/Thenerdstation/mltest) that aim at providing some general tests to help out pracititioners.  
 
 On top of these empirical considerations, there are theoretical ones as well. [TDD and scientific methodology are very similar](https://www.oreilly.com/library/view/thoughtful-machine-learning/9781449374075/ch01.html). When you create a test and see it failing is basically making a scientific hypothesis that is [falsifiable](https://en.wikipedia.org/wiki/Falsifiability). When you pass the test that is basically equivalent to the statistical testing of your experimental manipulation in a research study. Finally, refactoring is similar to the function of the discussion part of a paper: you turn your experimental manipulation to a theory. 
+
+![Figure 2]()
 
 ## Testing Sanity and Insanity
 
