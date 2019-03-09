@@ -14,7 +14,7 @@ Take for example the first step: fail. I remember when some time ago, we were si
 
 The next important thing is to focus on __only__ passing the actual test and not writing code that is intended to pass all possible tests in the future. One mantra helping in this is to 'Keep it simple, stupid' (KISS) that is often written on the wall of an IT office. Serious TDD practitioners literally stop as soon as the test passed and switch writing the next test if no refactoring needed. This yields short cycles of fail-pass iterations (aka. the flow). Also, the refactoring should not mean changing the test logic or completely rewriting the function that passed it. If you feel for example that the function is duplicated or has too many parameters then refactor. 
 
-![Figure 1]()
+![Figure 1](https://github.com/agostontorok/tdd_data_analysis/blob/master/Figure1.JPG)
 
 
 ## TDD for analytics
@@ -25,7 +25,7 @@ And third, there is a [craftmanship](http://science.sciencemag.org/content/280/5
 
 On top of these empirical considerations, there are theoretical ones as well. [TDD and scientific methodology are very similar](https://www.oreilly.com/library/view/thoughtful-machine-learning/9781449374075/ch01.html). When you create a test and see it failing is basically making a scientific hypothesis that is [falsifiable](https://en.wikipedia.org/wiki/Falsifiability). When you pass the test that is basically equivalent to the statistical testing of your experimental manipulation in a research study. Finally, refactoring is similar to the function of the discussion part of a paper: you turn your experimental manipulation to a theory. 
 
-![Figure 2]()
+![Figure 2](https://github.com/agostontorok/tdd_data_analysis/blob/master/Figure2.JPG)
 
 ## Testing Sanity and Insanity
 
