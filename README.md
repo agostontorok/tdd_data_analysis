@@ -1,4 +1,4 @@
-# TDD and data science
+# TDD and data science [![Build Status](https://travis-ci.org/agostontorok/tdd_data_analysis.svg?branch=master)](https://travis-ci.org/agostontorok/tdd_data_analysis)
 
 The previous two posts of this series were about the [business](https://medium.com/@torokagoston/effective-data-science-teams-part-1-9f40c6bff275) and [people](https://medium.com/@torokagoston/effective-data-science-teams-part-2-6af6f7674be9) perspectives of effective data science teams. However, in themselves they are only necessary but sufficient conditions: without the right tools and processes the recipe does not work. 
 
