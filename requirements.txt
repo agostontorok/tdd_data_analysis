@@ -3,7 +3,7 @@ pandas==0.24.1
 pytest==4.3.0
 pytest-bdd==3.1.0
 scikit-learn==0.18.2
-scipy==1.2.1
+scipy==1.10.0
 seaborn==0.7.1
 tdda==1.0.13
 xgboost==0.81
